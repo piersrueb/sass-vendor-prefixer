@@ -6,4 +6,4 @@
         #{'-' + nth($prefixes, $i) + '-' + $prop}: #{$val};
     }
     #{$prop}: #{$val};
-  }
+}
