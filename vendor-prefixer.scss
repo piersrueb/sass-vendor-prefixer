@@ -1,0 +1,17 @@
+//  SASS vendor prefixer
+
+@mixin prefixer($prop, $val) {
+    $prefixes: "moz", "ms", "o", "webkit";
+    @for $i from 1 through length($prefixes) {
+        #{'-' + nth($prefixes, $i) + '-' + $prop}: #{$val};
+    }
+    #{$prop}: #{$val};
+  }
+  
+  //  usage
+  //  view compiled CSS for result
+  
+  .test-class {
+        @include prefixer("transition", "background-color 0.2s, height 0.4s");
+  }
+  
