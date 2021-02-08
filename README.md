@@ -1,5 +1,11 @@
 ### Sass Vendor Prefixer
 
+Sass mixin for adding vendor prefixes for broader support for newer properties in older browsers. Add and remove prefixes from the array within the mixin to suit your needs.
+
+```scss
+$prefixes: "moz", "ms", "o", "webkit";
+```
+
 Usage:
 
 ```scss
